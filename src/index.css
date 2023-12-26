@@ -1,0 +1,47 @@
+/* src/index.css */
+
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::-webkit-scrollbar {
+  display: block;
+  width: 7px;
+  height: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c0c0c0;
+  border-right: none;
+  border-left: none;
+  border-radius: 10px;
+  backdrop-filter: blur(0px);
+  -webkit-backdrop-filter: blur(0px);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.violet-fill {
+  background: linear-gradient(135deg, #6004ff, #7f35ff 23.95%, #370097 60.11%, #8d4aff);
+  border: 1px solid hsla(0, 0%, 100%, .2);
+}
+
+.violet-fill:hover {
+  background: linear-gradient(135deg, #6004ff, #1a004b 23.95%, #370097 60.11%, #1a004b);
+}

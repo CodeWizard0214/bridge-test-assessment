@@ -1,0 +1,49 @@
+.violet-fill {
+  background: linear-gradient(135deg, #6004ff, #7f35ff 23.95%, #370097 60.11%, #8d4aff);
+  border: 1px solid hsla(0, 0%, 100%, .2);
+}
+
+.violet-fill:hover {
+  background: linear-gradient(135deg, #6004ff, #1a004b 23.95%, #370097 60.11%, #1a004b);
+}
+
+::-webkit-scrollbar {
+  display: block;
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c0c0c0;
+  border-right: none;
+  border-left: none;
+  border-radius: 10px;
+  backdrop-filter: blur(0px);
+  -webkit-backdrop-filter: blur(0px);
+}
+.loader {
+  position: relative;
+  width: 100px;
+  height: 100px;
+}
+
+.loader:before , .loader:after{
+  content: '';
+  border-radius: 50%;
+  position: absolute;
+  inset: 0;
+  box-shadow: 0 0 10px 2px rgba(24, 21, 21, 0.3) inset;
+}
+.loader:after {
+  box-shadow: 0 5px 0 #130000 inset;
+  animation: rotate 2s linear infinite;
+}
+
+@keyframes rotate {
+  0% {  transform: rotate(0)}
+  100% { transform: rotate(360deg)}
+}
